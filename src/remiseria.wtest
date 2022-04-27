@@ -77,8 +77,7 @@ test "Lucia reemplaza a Mariela y cobra lo esperado a Melina que trabaja para lu
 
 test "Chofer elegida para viajes entre roxana y juana" {
 
-	oficina.primeraOpcion(roxana)
-	oficina.segundaOpcion(juana)
+	oficina.asignarChoferes(roxana,juana)
 	
 	assert.that(oficina.choferElegidoParaViaje(anaMaria, 10) == juana)
 	assert.that(oficina.choferElegidoParaViaje(teresa, 10) == roxana)

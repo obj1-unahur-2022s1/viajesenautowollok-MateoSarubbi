@@ -26,9 +26,7 @@ object oficina {
   }
   
   method intercambiarChoferes() {
-    var aux = primeraOpcion
-    primeraOpcion = segundaOpcion
-    segundaOpcion = aux
+    self.asignarChoferes(self.segundaOpcion(),self.primeraOpcion())
   }
   
   method choferElegidoParaViaje(cliente, kms) {

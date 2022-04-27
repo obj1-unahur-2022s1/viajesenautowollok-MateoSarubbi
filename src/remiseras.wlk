@@ -5,8 +5,15 @@ object ludmila {
 }
 
 object anaMaria {
+	var economicamenteEstable = true
+	 	
+	method economicamenteEstable() = economicamenteEstable
+	method economicamenteEstable(param) {
+		economicamenteEstable = param
+	}
+	
   method precioPactadoPorKm() {
-    return 30
+    return if (economicamenteEstable) 30 else 25
   }
 }
 
